@@ -1,0 +1,22 @@
+.section {
+  padding: 5rem 0;
+  background-color: rgba(0, 4, 31, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .cardsGrid {
+    gap: 1rem;
+  }
+}

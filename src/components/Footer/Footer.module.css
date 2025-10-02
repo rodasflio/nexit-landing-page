@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--color-background);
+  color: var(--color-text-gray);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  height: 30px;
+}
+
+.companyName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-white);
+  margin: 0;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  margin: 0;
+}

@@ -1,0 +1,5 @@
+.container {
+  max-width: 1200px; /* A largura máxima que você quer para o conteúdo */
+  margin: 0 auto; /* Centraliza o container na tela */
+  padding: 0 2rem; /* Espaçamento interno nas laterais para telas pequenas */
+}

@@ -1,0 +1,54 @@
+.card {
+  /* Fundo semi-transparente, combinando com o tema escuro */
+  background-color: rgba(25, 78, 255, 0.1); 
+  /* Adicionando o efeito de vidro fosco (Glassmorphism) */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores Webkit (Chrome, Safari) */
+  
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  min-height: 200px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-text-white);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--color-text-gray);
+  margin: 0.5rem 0 0;
+}

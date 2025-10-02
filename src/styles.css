@@ -1,0 +1,44 @@
+/* Adicione a importação da fonte Rethink Sans.
+   Se a fonte não estiver instalada localmente,
+   você precisará importá-la de uma fonte externa como o Google Fonts.
+   Exemplo:
+   @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;700&display=swap');
+*/
+
+:root {
+  /* Cores */
+  --color-primary: #194EFF;
+  --color-background: #00020F;
+  --color-surface-1: #00041F;
+  --color-text-white: #FFFFFF;
+  --color-text-gray: #C9CDD8; /* Cor ajustada para facilitar a leitura */
+    
+  /* Tipografia */
+  --font-family-sans: 'Rethink Sans', sans-serif;
+}
+
+/* Reset básico para o site */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* Adicionando a imagem de fundo aqui */
+  background-image: url('./assets/images/hero-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Isso faz com que o fundo não role com a página */
+  
+  background-color: var(--color-background);
+  color: var(--color-text-white);
+  font-family: var(--font-family-sans);
+  line-height: 1.6;
+}
