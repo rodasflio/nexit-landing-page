@@ -1,5 +1,6 @@
 .footer {
-  background-color: var(--color-background);
+  background-color: var(--color-background); /* Fundo sólido preto */
+  backdrop-filter: blur(5px); /* Mantém o efeito de blur se houver sobreposição */
   color: var(--color-text-gray);
   padding: 3rem 0;
   text-align: center;

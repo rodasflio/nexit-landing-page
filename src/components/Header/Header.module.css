@@ -5,6 +5,14 @@
   padding: 1.5rem 2rem;
   width: 100%;
   box-sizing: border-box;
+  /* Adicionando o efeito de glassmorfismo */
+  background-color: rgba(0, 4, 31, 0.5); 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* Propriedades para fixar o cabeçalho no topo */
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logoContainer {
@@ -58,7 +66,7 @@
   background-color: #0c36a4;
 }
 
-/* Media Query para telas menores (ex: celulares) */
+/* Media Query para telas menores */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
